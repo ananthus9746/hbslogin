@@ -1,0 +1,22 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+
+
+<div class="d-flex justify-content-center container">
+    <div class="row"></div>
+    {{#each vehicle}}
+
+    <div class="card col m-4" style="width: 18rem;">
+        <img src="{{ img}}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{ name}}</h5>
+            <p class="card-text">{{ conf}}</p>
+            <p class="card-text">{{ perfo}}</p>
+            <p class="card-text">{{ fuel}}</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+
+    {{/each}}
+</div>
+</div>
